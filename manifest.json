@@ -1,0 +1,16 @@
+{
+  "name": "Jane Doe Girly Portfolio",
+  "short_name": "Girly Portfolio",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#fff0f6",
+  "theme_color": "#ff69b4",
+  "description": "A sweet, girly PWA portfolio with a cute heart icon.",
+  "icons": [
+    {
+      "src": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Emoji_u2764.svg/512px-Emoji_u2764.svg.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

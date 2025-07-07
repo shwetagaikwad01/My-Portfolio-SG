@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Favicon (Heart emoji) -->
+  <link rel="icon" href="android-chrome-512x512.png" type="image/png" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <img class="hero-icon" src="apple-touch-icon.png" alt="Icon" width="60" />
+    <h1>Hello, I'm Shweta Gaikwad 🌸</h1>
+    <p>Creative Designer & Frontend Developer</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>🌷 Blossom Blog</h3>
+        <p>A sweet personal blog for my thoughts & stories.</p>
+      </div>
+      <div class="project-card">
+        <h3>🛍️ Pretty Shop</h3>
+        <p>A cute e-commerce site for lovely finds.</p>
+      </div>
+      <div class="project-card">
+        <h3>💖 Girly Portfolio</h3>
+        <p>This adorable, installable PWA portfolio!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li>🎨 UI/UX Design</li>
+      <li>💻 HTML, CSS, JS</li>
+      <li>📱 Responsive Web Design</li>
+      <li>✨ Figma & Canva</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: gaikwadshweta478@email.com</p>
+    <p></p>
+  </section>
+
+  <!-- Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js')
+        .then(() => console.log('✅ Service Worker Registered'))
+        .catch(err => console.log('❌ Service Worker Error:', err));
+    }
+  </script>
+</body>
+</html>
